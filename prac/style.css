@@ -1,0 +1,30 @@
+#canvas{
+    border:5px solid black;
+    border-color: red;
+
+}
+
+.down{
+    bottom: 0;
+    left: 9rem;
+  }
+  
+  .left{
+    top: 7rem;
+    left: 0;
+  }
+  
+  
+  .right{
+    top: 7rem;
+    right: 0;
+  }
+  
+  .up{
+    top: 0;
+    left: 9rem;
+  }
+
+  .text-center {
+    text-align: center;
+  }
