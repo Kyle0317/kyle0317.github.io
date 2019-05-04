@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Midterm Project</title>
+    <link href="https://fonts.googleapis.com/css?family=Dokdo|Inconsolata|Nanum+Pen+Script|Jua" rel="stylesheet" type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <div id="main">
+        <div class="container"><h1>
+            <div class="banner"><svg width="500" height="200">
+                <text 
+                  x="15" y="120" fill="#e13137" 
+                  font-size="40" >
+                  Lee
+                  <tspan dy="-10" fill="#dfdfdf" font-size="40">Bo</tspan>
+                  <tspan dy="35" fill = "#6633CC" dx="-14" font-size="60">Won!</tspan>
+                </text>
+              </svg>
+              <div class="banner-left"></div>
+              <div class="banner-right"></div>
+              
+        </h1></div>
+        <h2 class="ic" text-align="relative">International Company</h2>
+        <h3 class="title" text-align="relative">Product Information</h3>
+    
+        <div id="entry">
+                <div>Name <input type ="text" id="NAME" placeholder="이름"/></div>
+                <div>Price <input type ="text" id="PRICE" placeholder="가격"/></div>
+                <div> <button id="save">Save</button></div>
+            </div>
+    <br/>
+    <div id="databorder">
+    <table id="mytable" width="100%" border="1"> 
+            <tr> 
+            <th>ID</th>  
+            <th onclick="sortTable(1)">NAME</th>
+            <th onclick="sortTable(2)">PRICE</th>
+            </tr>
+            <tbody contentEditable="true" id="data">
+   
+            </tbody>
+    </table>    
+    </div>          
+    <div id="footer">
+            &copy;2019. 이보원™
+        </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
+

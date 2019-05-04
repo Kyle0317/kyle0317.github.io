@@ -1,0 +1,165 @@
+#main {
+    width: 800px;
+    min-height: 700px;
+    margin: auto;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 10px;     
+  }
+
+.ic{
+  position : relative;
+  bottom : 210px;
+  right : 290px;
+  font-family :'Nanum Pen Script', cursive;
+}
+
+.title{
+  position: relative;
+  bottom : 220px;
+  right : 160px;
+  font-size : 2em;
+  font-family: 'Jua', sans-serif;
+
+}
+.container
+{
+  /*position: absolute; */
+  position: relative;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-family: 'Dokdo', cursive;
+}
+
+.banner
+{
+  position: relative;
+  padding: 10px 20px;
+  animation: loader 1s cubic-bezier(0.5, 0.1, 0.15, 1) alternate infinite;
+}
+
+@keyframes loader
+{
+  0%
+  {
+    letter-spacing: -1px;
+  }
+  100%
+  {
+    letter-spacing: 15px;
+  }
+}
+
+.banner-left
+{
+  animation: sub-banner-left 1s cubic-bezier(0.5, 0.1, 0.15, 1) alternate infinite;
+}
+
+@keyframes sub-banner-left
+{
+  0%
+  {
+    right: 82%;
+  }
+  100%
+  {
+    right: 90%;
+  }
+}
+
+.banner-right
+{
+  animation: sub-banner-right 1s cubic-bezier(0.5, 0.1, 0.15, 1) alternate infinite;
+}
+
+@keyframes sub-banner-right
+{
+  0%
+  {
+    left: 82%;
+  }
+  100%
+  {
+    left: 90%;
+  }
+}
+
+.banner-left::before, .banner-right::before
+{
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: -1px;
+  border: 22px solid;
+  border-color: transparent;
+}
+
+#entry{
+  font-size: 1.2em;
+  border:1px solid black;
+  width: 600px;
+  height: 200px;
+  margin-top : -250px;
+  margin-left : 100px;
+}
+
+#entry div{
+  text-align: right;
+  height: 40px;
+  margin-top:20px;
+  margin-right : 120px;
+}
+
+#entry div input{
+  padding:5px;
+  width: 300px;
+  margin-bottom:5px;
+}
+
+#entry div button{
+  padding:5px;
+  min-width:100px;
+}
+
+#databorder{
+  width: 600px;
+  height: 500px;
+  margin :auto;
+}
+
+tbody#data tr:nth-child(odd){
+  background-color: aquamarine;
+}
+
+tbody#data tr:nth-child(even){
+  background-color : rosybrown;
+}
+
+.text-center{
+  text-align: center;
+
+}
+
+
+table {
+  counter-reset: rowNumber;
+  table-layout: fixed;
+}
+/*
+table tr {
+  counter-increment: rowNumber;
+}
+*/
+table tr td:first-child:before {
+  content: counter(rowNumber);
+  counter-increment: rowNumber;
+}
+
+
+
+
+
+
+

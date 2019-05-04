@@ -1,41 +1,70 @@
-/* Filename: app.js
+﻿/* Filename: app.js
    Javascript for Game 2 Homework
 */
 
 //alert("ok");
 //console.log("ok");
 
+
 window.onload = init;
 
 function init() {
+  
+
   var canvas = document.getElementById("game_area");
   var ctx = canvas.getContext("2d");
-  ctx.fillStyle = "#77f";
-
-  
-  ctx.beginPath();
-  ctx.arc(50, 50, 20, 0, 2 * Math.PI);
-  ctx.fill();
+  //var x = canvas.width/2;
+  //var y = canvas.height-30;
+  var x = 60;
+  var y = 60;
 
 
+  //draw();
+
+  function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, 20, 0, Math.PI*2);
+    ctx.fillStyle = "#77f";
+    ctx.fill();
+    ctx.closePath();
+  }
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBall();
+    clickButton();
+  }
+
+  function clickButton(){
+    
+    document.getElementById("up").onclick=function(){
+      move(1)
+    };
+    document.getElementById("down").onclick=function(){
+      move(2)
+    };
+    document.getElementById("left").onclick=function(){
+      move(3)
+    };
+    document.getElementById("right").onclick=function(){
+      move(4)
+    };
+  }
+
+  function move(op){
+    
+    switch(op){
+      case 1: y = y - 10
+          break;
+      case 2: y = y + 10
+          break;
+      case 3: x = x - 10
+          break;
+      case 4: x = x + 10
+          break;
+    }
+  }
 
 
+  setInterval(draw, 10);
 }
-
-
-
-
-/*
-<canvas width="500" height="400" id="area"></canvas>
-
-<script type="text/javascript">
-window.onload = function () {
-var canvas = document.getElementById("area");
-if (canvas.getContext) {
-  var draw = canvas.getContext("2d")
-  //이곳에 그래픽 코드가 시작됩니다.
-  //지원되는 브라우저가 실행할 코드
-} else {
-  alert("이 브라우저는 canvas를 지원하지않습니다")
-}
-*/

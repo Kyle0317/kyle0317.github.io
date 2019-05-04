@@ -35,7 +35,6 @@
               left = 100;
 
           circle.style.top = top+'%';
-          //circle.style.right = right+'%';
           circle.style.left = left+'%';
       });
   }

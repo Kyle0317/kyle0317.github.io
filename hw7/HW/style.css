@@ -1,0 +1,75 @@
+#main {
+    width: 800px;
+    min-height: 600px;
+    margin: auto;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding-bottom: 10px;     
+  }
+
+#footer{
+  width:300px;
+  position: fixed;
+  bottom : 200px;
+}
+
+.login{
+  position: relative;
+  bottom : -20px;
+  right : 230px;
+}
+
+.position{
+  position : relative;
+  bottom : -20px;
+  right : 230px;
+}
+
+.li{
+  position : relative;
+  top : 20px;
+  right : -260px;
+}
+
+.lo{
+  position : relative;
+  top : 20px;
+  right : -300px;
+}
+
+.loc{
+  position : relative;
+  top : 20px;
+  right : -280px;
+}
+
+.users{
+  position : relative;
+  top : 20px;
+  right : 280px;
+}
+
+.system{
+  position : relative;
+  top : 20px;
+  right : 200px;
+}
+
+.products{
+  position : relative;
+  top : 20px;
+  right : 245px;
+}
+
+.customers{
+  position : relative;
+  top : 20px;
+  right : 200px;
+}
+
+.back1{
+  position: relative;
+  bottom : -20px;
+  right : 230px;
+}
+
