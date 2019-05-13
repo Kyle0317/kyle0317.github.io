@@ -20,9 +20,10 @@
         <br/>
         
         
-        <div id="footer"> Copyright 2019. Lee Bo Won Systems</div>
+
 
     </form>
+        <div id="footer2"> Copyright 2019. Lee Bo Won Systems</div>
 </div>
 </body>
 </html>

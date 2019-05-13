@@ -9,8 +9,14 @@
 
 #footer{
   width:300px;
-  position: fixed;
-  bottom : 200px;
+  position: relative;
+  top : 450px;
+}
+
+#footer2{
+  width:300px;
+  position: relative;
+  top : 390px;
 }
 
 .login{
