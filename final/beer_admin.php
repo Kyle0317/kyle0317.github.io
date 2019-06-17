@@ -18,7 +18,7 @@
 <div id="entry">
     
     Name: <input type="text" id="name" autocomplete="off"/><br/>
-    Alchol volume: <input type="text" id="alchol_volume"><br/>
+    Alcohol volume: <input type="text" id="alchol_volume"><br/>
     Size: <input type="text" id="size"><br/>
     Price: <input type="text" id="price"><br/>
     Region: <input type="text" id="region"><br/>
@@ -33,7 +33,7 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Alchol</th>
+            <th>Alcohol</th>
             <th>Size</th>
             <th>Price</th>
             <th>Region</th>

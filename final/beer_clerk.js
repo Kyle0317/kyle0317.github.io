@@ -71,7 +71,7 @@ xhr_get.onreadystatechange = function(){
 function updateTable(){
     let  lst = document.querySelector("#list");
     if(beer == null ) return;
-    lst.innerHTML = "<tr><th>ID</th><th>Name</th><th>alchol</th><th>More Info</th></tr>";
+    lst.innerHTML = "<tr><th>ID</th><th>Name</th><th>alcohol</th><th>More Info</th></tr>";
 
     for(i = 0; i<beer.length; i++){
         let row  = document.createElement("tr");

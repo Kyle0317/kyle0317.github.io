@@ -12,11 +12,9 @@ function init(){
     xhr_get.open("GET","http://localhost/prac/api/soju.php");
     xhr_get.send(null);
 
-    console.log('ok');
     document.querySelector("#btn_save")
         .addEventListener('click', 
         function(){
-            console.log("inside save..")
             beer_soju();
        });
 }
@@ -78,7 +76,7 @@ function updateTable(){
 
     let  lst = document.querySelector("#list");
     if(soju == null ) return;
-    lst.innerHTML = "<tr><th>ID</th><th>Name</th><th>Alchol</th><th>Size</th><th>Price</th><th>Region</th></tr>";
+    lst.innerHTML = "<tr><th>ID</th><th>Name</th><th>Alcohol</th><th>Size</th><th>Price</th><th>Region</th></tr>";
 
     for(i = 0; i<soju.length; i++){
         let row  = document.createElement("tr");
@@ -88,27 +86,20 @@ function updateTable(){
         let size = document.createElement("td");
         let price = document.createElement("td");
         let region = document.createElement("td");
-        //let photo = document.createElement("td");
-        
+
         id.innerText =  soju[i].id;
         name.innerText = soju[i].name;
         alchol_volume.innerText = soju[i].alchol_volume+'%';
         size.innerText = soju[i].size+'ml';
         price.innerText = soju[i].price+'won';
         region.innerText = soju[i].region;
-        //photo.innerHTML = "<img src='https://post-phinf.pstatic.net/MjAxODA0MTBfOTgg/MDAxNTIzMzExODc4Nzc1.z1aXRfLTL8ON3_Nx8T7pBalkPEq4BYyeFV8uaGkM0gIg.pkq2EYYzzz3XZARkO7OkSoRHSgjDZ4zRWbkdP8z2iagg.JPEG/IMG_0991.jpg?type=w1200'/>"
-        //photo.innerHTML = "<img src='";soju[i].photo;"' />"
-        //photo.innerHTML = "<img src='soju[i].photo' width='300px'/>"
 
-
-        //photo.innerHTML = "<src='soju[i].photo' width='300px'/>"
         row.append(id);
         row.append(name);
         row.append(alchol_volume);
         row.append(size);
         row.append(price);
         row.append(region);
-        //row.append(photo);
         lst.append(row);
     
     }

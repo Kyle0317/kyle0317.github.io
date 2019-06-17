@@ -13,7 +13,7 @@
 <body>
     <div id="main">
 <a href="login.php" class="li">Login</a>
-        <h1 width="100%" text-align="relative">Korean alchol List</h1>
+        <h1 width="100%" text-align="relative">Korean alcohol List</h1>
 <?php
 $name = "Lee Bo Won";
 $output1 = "Welcome to <strong>$name</strong> Korean alchol's dictionary.";

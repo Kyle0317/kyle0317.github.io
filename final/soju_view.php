@@ -30,7 +30,7 @@
             //IMAGE
             echo "<br/><img src='$photo' width='200px';/>";
             //alcho
-            echo "<h1>Alchol : $alchol_volume %</h1>";
+            echo "<h1>Alcohol : $alchol_volume %</h1>";
             //size
             echo "<h1>Size : $size ml</h1>";
             //price

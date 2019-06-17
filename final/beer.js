@@ -78,7 +78,7 @@ function updateTable(){
 
     let  lst = document.querySelector("#list");
     if(beer == null ) return;
-    lst.innerHTML = "<tr><th>ID</th><th>Name</th><th>Alchol</th><th>Size</th><th>Price</th><th>Region</th></tr>";
+    lst.innerHTML = "<tr><th>ID</th><th>Name</th><th>Alcohol</th><th>Size</th><th>Price</th><th>Region</th></tr>";
 
     for(i = 0; i<beer.length; i++){
         let row  = document.createElement("tr");
